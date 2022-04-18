@@ -4,6 +4,7 @@
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
+  --dark-grey: hsl(203, 14%, 22%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
 
@@ -11,6 +12,12 @@
 
   --font-size: 1.6rem;
   --font: 'Overpass', sans-serif;
+
+  /* Margin bottom */
+  --mb-0-4: 4px;
+  --mb-0-8: 8px;
+  --mb-1-6: 16px;
+  --mb-2-4: 24px;
 }
 * {
   margin: 0;
@@ -19,4 +26,98 @@
 }
 body {
   font-family: var(--font);
+  background-color: var(--very-dark-blue);
+}
+main {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  margin: 0 24px;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+}
+.card__star {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  margin-bottom: var(--mb-1-6);
+  border-radius: 50%;
+  background-color: var(--dark-grey);
+}
+.card__title {
+  margin-bottom: var(--mb-1-6);
+  color: var(--white);
+}
+.card__description {
+  margin-bottom: var(--mb-2-4);
+  color: var(--light-grey);
+}
+.card__rating-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 12px;
+  margin-bottom: var(--mb-2-4);
+}
+.card__rating-item {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
+}
+.card__rating-item:hover {
+  cursor: pointer;
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+.card__rating-item:active {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+.button {
+  padding: 16px 0;
+  cursor: pointer;
+  border-radius: 32px;
+  border: 0;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button:active {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+.second-card {
+  display: none;
+  text-align: center;
+}
+.card__img {
+  margin-bottom: var(--mb-1-6);
+}
+.card__tag {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: var(--mb-1-6);
+  padding: 4px 6px;
+  border-radius: 8px;
+  background-color: var(--dark-grey);
+  font-size: 14px;
+}
+.card__tag-text {
+  color: var(--primary-color);
 }
