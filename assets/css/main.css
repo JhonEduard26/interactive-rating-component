@@ -78,11 +78,11 @@ main {
 }
 .card__rating-item:hover {
   cursor: pointer;
-  background-color: var(--light-grey);
+  background-color: var(--primary-color);
   color: var(--white);
 }
-.card__rating-item:active {
-  background-color: var(--primary-color);
+.active {
+  background-color: var(--light-grey);
   color: var(--white);
 }
 .button {
@@ -103,7 +103,6 @@ main {
   color: var(--primary-color);
 }
 .second-card {
-  display: none;
   text-align: center;
 }
 .card__img {
@@ -120,4 +119,10 @@ main {
 }
 .card__tag-text {
   color: var(--primary-color);
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
 }
