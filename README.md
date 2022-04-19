@@ -6,7 +6,7 @@ Small project to practice handling user interactions and updating the DOM.
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -23,14 +23,17 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+![mobile](./assets/screenshots/mobile.jpeg)
+![mobile-thank-you-state](./assets/screenshots/mobile-thank-you-state.jpeg)
+![desktop](./assets/screenshots/desktop.jpeg)
+![desktop-thank-you-state](./assets/screenshots/desktop-thank-you-state.jpeg)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/JhonEduard26/interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://jhoneduard26.github.io/interactive-rating-component/)
 
 ## My process
 
